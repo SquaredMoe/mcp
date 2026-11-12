@@ -6,7 +6,7 @@
 
 **Public forks found:** **47** &nbsp; · &nbsp; **Sync workflows installed:** **46** &nbsp; · &nbsp; **Requires attention:** **1**
 
-**Automatic discovery of future public forks:** configured in the central controller. **Automatic installation for future forks:** requires the optional `CROSS_REPO_PAT` secret and a successful controller run.
+**Automatic discovery of future public forks:** configured in the central controller. **Automatic installation for future forks:** the existing daily ChatGPT GitHub Repository Sync task now attempts to install workflows through the connected GitHub app; alternatively, the controller can auto-enroll with a `CROSS_REPO_PAT` secret. Both depend on successful permissions and workflow execution.
 
 ## All forks
 
@@ -64,7 +64,7 @@
 
 - [Open central dashboard workflow](https://github.com/SquaredMoe/mcp/actions/workflows/fork-sync-control.yml).
 - The central controller checks repo status twice daily and replaces this page with live results once it successfully runs.
-- To automatically onboard future public forks, configure an Actions secret `CROSS_REPO_PAT` in `SquaredMoe/mcp` with appropriate cross-repository permissions. **Do not paste tokens into chat or commit them to code.**
+- Automatic onboarding through the daily ChatGPT GitHub Repository Sync task is enabled (execution not yet verified). An optional Actions secret `CROSS_REPO_PAT` can also let the controller onboard forks without ChatGPT, with appropriate cross-repository permissions. **Do not paste tokens into chat or commit them to code.**
 - **Security:** a dedicated, non-forked controller repository is safer before granting an account-wide write token. This dashboard currently resides in a fork that also receives upstream updates.
 - You may need to manually enable workflows in GitHub Actions for existing forks. A central PAT with Actions permissions can help enable workflows disabled specifically because a repository is a fork.
 - GitHub Actions scheduled jobs can be disabled after 60 days without repository activity.
