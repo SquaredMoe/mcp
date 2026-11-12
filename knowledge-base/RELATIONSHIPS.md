@@ -45,7 +45,14 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 
 **Possible experiment:** audit a locally controlled sample app, document a verified issue, write regression tests, and rerun scans. Do not use these tools against third-party systems without authorization.
 
-## 6. Making reusable knowledge durable
+## 6. Network infrastructure and VPN operations
+
+- `setup-ipsec-vpn` is an IPsec VPN installation-script collection for supported Linux servers and clients, including IKEv2, IPsec/L2TP and Cisco IPsec modes (per the project's README).
+- Its main entry points include `vpnsetup.sh`, OS-specific setup scripts and `docs/`. This is a standalone networking toolkit, **not a verified integration** with the other repositories.
+
+**Possible experiment:** review scripts offline, document firewall requirements, establish a disposable Linux VM test environment, and validate supported client connections before any production deployment. Installation scripts run with elevated privileges; review their contents and download sources before execution. Keep credentials and network configurations out of this public catalog.
+
+## 7. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
