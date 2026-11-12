@@ -211,7 +211,7 @@ def main():
     good = sum(row["state"].startswith("✅") for row in rows)
     problems = sum(row["state"].startswith(("🔴", "⚠️", "🟠")) for row in rows)
     waiting = len(rows) - good - problems
-    mode = "Auto-enroll enabled" if PAT else "Monitoring only — auto-enroll needs a PAT"
+    mode = "Controller auto-enroll enabled" if PAT else "Read-only controller (ChatGPT daily task also attempts onboarding)"
 
     lines = [
         "# GitHub Fork Sync Dashboard",
@@ -255,7 +255,10 @@ def main():
         "repositories (including future ones), with **Contents: read/write**, **Workflows: read/write**,",
         "and **Actions: read/write** permissions. Never commit or paste the token into a repository.",
         "For stronger isolation, host this controller in a dedicated, non-forked repository before granting",
-        "an account-wide write token. Without the secret, new forks appear here as **Needs setup**.",
+        "an account-wide write token. Without the secret, new forks appear here as **Needs setup**",
+        "until a separate automation installs their workflows.",
+        "The existing daily ChatGPT GitHub Repository Sync task also attempts onboarding through the",
+        "connected GitHub app; this depends on that connector having write permission.",
         "",
         "### Notes",
         "",
