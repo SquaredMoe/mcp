@@ -1,16 +1,16 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-12 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 37 accessible public repositories.
+> **Snapshot:** 2026-11-12 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 39 accessible public repositories.
 
 ## What this is
 
-An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 37 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
+An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 39 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
 
 Use the connected GitHub repository files as the source of truth for any implementation. Re-read the exact files and current branches before editing, combining, installing, or deploying anything. Assume README features and marketing claims are claims by upstream authors until independently verified.
 
 ## Navigation
 
-- [Repository catalog (all 37)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 39)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -60,6 +60,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [Agent-Reach](https://github.com/SquaredMoe/Agent-Reach)
 - [gpt-researcher](https://github.com/SquaredMoe/gpt-researcher)
 - [camofox-browser](https://github.com/SquaredMoe/camofox-browser)
+- [sherlock](https://github.com/SquaredMoe/sherlock) — username-based OSINT research
 
 ### Growth & advertising
 - [claude-seo](https://github.com/SquaredMoe/claude-seo)
@@ -70,6 +71,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [RSSHub](https://github.com/SquaredMoe/RSSHub)
 - [system-prompts-and-models-of-ai-tools](https://github.com/SquaredMoe/system-prompts-and-models-of-ai-tools)
 - [awesome-mcp-servers](https://github.com/SquaredMoe/awesome-mcp-servers)
+- [awesome-selfhosted](https://github.com/SquaredMoe/awesome-selfhosted) — self-hostable software directory
 
 ## Handoff context for an AI assistant
 
