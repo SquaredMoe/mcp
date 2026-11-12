@@ -52,7 +52,15 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 
 **Possible experiment:** review scripts offline, document firewall requirements, establish a disposable Linux VM test environment, and validate supported client connections before any production deployment. Installation scripts run with elevated privileges; review their contents and download sources before execution. Keep credentials and network configurations out of this public catalog.
 
-## 7. Making reusable knowledge durable
+## 7. Discovering self-hosted services and public usernames
+
+- `awesome-selfhosted` is a curated index of self-hostable free software, not a deployable application by itself. It can help identify tools to investigate for private infrastructure, knowledge management, or developer workflows.
+- `sherlock` is a Python OSINT utility for searching **public** social media account presence by username across sites; its project README is located at `docs/README.md`, and its Python entry point is defined in `pyproject.toml`.
+- `awesome-selfhosted` may provide candidates for hosting software used alongside `mcp`, `OmniRoute`, or other applications; `sherlock` might complement general web research tools such as `Agent-Reach`. These are **unverified ideas**, not installed or tested integrations.
+
+**Possible experiment:** shortlist self-hosted tooling against cost, security, maintenance, and resource requirements. For username research, test only legitimate public-profile lookups, avoid misidentifying people (a matching username does not prove identity), and respect platform and privacy requirements.
+
+## 8. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
