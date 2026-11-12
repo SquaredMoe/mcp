@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-11. All listed repositories are **public forks**. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
+As of 2026-11-12. All listed repositories are **public forks**. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -40,6 +40,8 @@ As of 2026-11-11. All listed repositories are **public forks**. GitHub repo desc
 | [Vibe-Trading](https://github.com/SquaredMoe/Vibe-Trading) | Trading | Agent-driven trading research and analysis application | [HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading) | `main` | `agent/`, `frontend/`, `desktop/`, `tools/` |
 | [FinceptTerminal](https://github.com/SquaredMoe/FinceptTerminal) | Trading | Finance terminal for market data, portfolios and research | [Fincept-Corporation/FinceptTerminal](https://github.com/Fincept-Corporation/FinceptTerminal) | `main` | `fincept-qt/`, `docs/`, `setup.sh` |
 | [claude-ads](https://github.com/SquaredMoe/claude-ads) | Marketing | Read-oriented auditing/reporting skills for multi-platform paid ads | [AgriciDaniel/claude-ads](https://github.com/AgriciDaniel/claude-ads) | `main` | `ads/`, `agents/`, `claude_ads_core/`, `docs/` |
+
+| [setup-ipsec-vpn](https://github.com/SquaredMoe/setup-ipsec-vpn) | Network / VPN | Automates IPsec VPN server setup for IKEv2, IPsec/L2TP and Cisco IPsec, with client and management scripts | [hwdsl2/setup-ipsec-vpn](https://github.com/hwdsl2/setup-ipsec-vpn) | `master` | `vpnsetup.sh`, `vpnsetup_ubuntu.sh`, `vpnsetup_centos.sh`, `vpnsetup_alpine.sh`, `docs/`, `azure/` |
 
 ## Reading order
 
