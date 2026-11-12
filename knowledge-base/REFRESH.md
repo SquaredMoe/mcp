@@ -2,7 +2,7 @@
 
 ## Status and evidence levels
 
-- **Verified:** Repository exists at `SquaredMoe/<name>`; GitHub metadata (public/fork/parent/default branch); top-level files/directories; README opening content viewed on 2026-11-11 (initial 36) and 2026-11-12 (new VPN repository).
+- **Verified:** Repository exists at `SquaredMoe/<name>`; GitHub metadata (public/fork/parent/default branch); top-level files/directories; README opening content viewed on 2026-11-11 (initial 36) and 2026-11-12 (VPN and self-hosted resources); Sherlock uses `docs/README.md` plus `pyproject.toml` rather than a root README.
 - **Described:** Repository purpose comes from project metadata/README and is not an independent technical evaluation.
 - **Hypothesis:** Cross-repository workflows in [RELATIONSHIPS.md](RELATIONSHIPS.md). No integration is asserted.
 - **Not done:** Full code audit, commit-by-commit upstream comparison, complete dependency/SBOM inventory, runtime execution, security assessment, license-compatibility review, verification of deployed environments, and reading of every source file.
@@ -11,6 +11,7 @@
 
 - **2026-11-11:** Initial repository inventory — 36 public forks.
 - **2026-11-12:** 37 accessible repositories. New public fork: `SquaredMoe/setup-ipsec-vpn` (upstream `hwdsl2/setup-ipsec-vpn`, default branch `master`). GitHub metadata, root directory and README reviewed; added to catalog, topic map and relationship notes. No removals or renames detected.
+- **2026-11-12 (later check):** 39 accessible repositories. New public forks: `SquaredMoe/awesome-selfhosted` (upstream `awesome-selfhosted/awesome-selfhosted`, `master`) and `SquaredMoe/sherlock` (upstream `sherlock-project/sherlock`, `master`). GitHub metadata and repository roots inspected, plus project documentation; the Sherlock README is in `docs/README.md`. No removals or renames detected.
 - **Scope of automated comparison:** Repository names, default branches and tracked inventory. New code within existing repositories is not deeply inspected by this inventory refresh.
 
 ## Suggested quarterly refresh
