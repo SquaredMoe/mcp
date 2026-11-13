@@ -1,11 +1,25 @@
 /**
- * Fixture pages for the engine's tests, token budgets and the eval, served on 127.0.0.1 at a random port: a form like httpbin's, a list like Hacker News, a repo page like GitHub's, a login, a search with pages, a modal, a feed that loads more as it scrolls, and pages for scrolling, iframes, shadow DOM, dialogs, uploads, covered elements and popups.
+ * Fixture pages for the engine's tests, token budgets and the eval, served on 127.0.0.1 at a random port: a form like httpbin's, a list like Hacker News, a repo page like GitHub's, a login, a search with pages, a modal, a feed that loads more as it scrolls, and pages for scrolling, iframes, shadow DOM, dialogs, uploads, files to download, covered elements and popups; the eval's harder pages are in `hard-fixtures.ts`.
  */
 import http from "node:http";
 import type { AddressInfo } from "node:net";
 
+import {
+  CITIES,
+  hardFixture,
+  INVOICE_AMOUNTS,
+  invoicePage,
+  SPA_ORDERS,
+} from "@/commands/testing/hard-fixtures";
+
 const page = (title: string, body: string, head = "") =>
   `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${title}</title>${head}</head><body>${body}</body></html>`;
+
+/** A 1×1 PNG */
+const PIXEL_PNG = Buffer.from(
+  "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+  "base64",
+);
 
 const escape = (text: string) =>
   text.replace(/[&<>"]/g, (ch) => `&#${ch.charCodeAt(0)};`);
@@ -155,6 +169,17 @@ const TESTS: Record<string, string> = {
     "Upload",
     `<label>File <input type="file" id="file" multiple onchange="document.getElementById('out').textContent=[...this.files].map(f=>f.name+':'+f.size).join(',')"></label><button onclick="document.getElementById('file').click()">Choose</button><p id="out"></p>`,
   ),
+  // Files to download: a CSV the server names, a JSON file a link names, an image, a file the page makes (a blob), a missing file, one over the size cap, and another origin's file (localhost, not 127.0.0.1) without CORS
+  "/files": page(
+    "Files",
+    `<h1>Files</h1><a href="/files/report">Report</a> <a href="/files/data" download="named.json">Data</a> <img src="/files/pixel.png" alt="Pixel"> <a id="blob" download="notes.txt">Notes</a> <a href="/files/missing.pdf">Missing</a> <a href="/files/big.bin">Big</a> <a id="other">Other origin</a> <button>Not a link</button>
+<script>document.getElementById('blob').href=URL.createObjectURL(new Blob(['made in the page'],{type:'text/plain'}));document.getElementById('other').href=location.origin.replace('127.0.0.1','localhost')+'/files/data'</script>`,
+  ),
+  // The Data link in an iframe on another origin (localhost), which only that frame can fetch
+  "/files-frame": page(
+    "Files in a frame",
+    `<iframe title="Files" style="width:600px;height:200px"></iframe><script>document.querySelector('iframe').src=location.origin.replace('127.0.0.1','localhost')+'/files'</script>`,
+  ),
   "/covered": page(
     "Covered",
     `<button id="target" onclick="this.textContent='clicked'">Under</button><div id="overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.2)"></div>`,
@@ -221,10 +246,12 @@ export async function serveFixtures(): Promise<{
   origin: string;
   url: (path: string) => string;
   close: () => Promise<void>;
-  /** Form posts and logins received, newest last */
+  /** Form posts, logins and the hard pages' records (`/record`, with the `_ref` the page was given) received, newest last */
   posts: Record<string, string>[];
 }> {
   const posts: Record<string, string>[] = [];
+  /** One-time keys for the billing page's invoice tabs */
+  const invoiceKeys = new Set<string>();
   const server = http.createServer((req, res) => {
     const url = new URL(req.url ?? "/", "http://127.0.0.1");
     const send = (
@@ -235,6 +262,11 @@ export async function serveFixtures(): Promise<{
       res.writeHead(status, { "content-type": type });
       res.end(body);
     };
+    if (req.method === "POST" && url.pathname === "/api/invoice-key") {
+      const key = Math.random().toString(36).slice(2);
+      invoiceKeys.add(key);
+      return send(200, JSON.stringify({ key }), "application/json");
+    }
     if (req.method === "POST") {
       let body = "";
       req.on("data", (chunk) => (body += chunk));
@@ -244,6 +276,14 @@ export async function serveFixtures(): Promise<{
         for (const [key, value] of form)
           entries[key] = entries[key] ? `${entries[key]},${value}` : value;
         posts.push(entries);
+        if (url.pathname === "/record") {
+          entries._ref = `R-${1000 + posts.length}`;
+          return send(
+            200,
+            JSON.stringify({ ok: true, ref: entries._ref }),
+            "application/json",
+          );
+        }
         if (url.pathname === "/login") {
           if (entries.username === "jane" && entries.password === "hunter2") {
             res.writeHead(303, { location: "/account" });
@@ -261,8 +301,8 @@ export async function serveFixtures(): Promise<{
         send(
           200,
           page(
-            "Order received",
-            `<h1>Thanks, order received</h1><pre>${escape(JSON.stringify(entries))}</pre>`,
+            entries.form === "signup" ? "Workspace created" : "Order received",
+            `<h1>${entries.form === "signup" ? "Your workspace is ready" : "Thanks, order received"}</h1><pre>${escape(JSON.stringify(entries))}</pre>`,
           ),
         );
       });
@@ -303,6 +343,50 @@ export async function serveFixtures(): Promise<{
           JSON.stringify({ ok: true, items: [1, 2, 3] }),
           "application/json",
         );
+      case "/files/report":
+        res.writeHead(200, {
+          "content-type": "text/csv",
+          "content-disposition": `attachment; filename="Q3 report.csv"; filename*=UTF-8''Q3%20report%20%E2%80%93%20final.csv`,
+        });
+        return res.end("month,total\nJuly,10\n");
+      case "/files/data":
+        return send(200, JSON.stringify({ ok: true }), "application/json");
+      case "/files/pixel.png":
+        res.writeHead(200, { "content-type": "image/png" });
+        return res.end(PIXEL_PNG);
+      case "/files/big.bin":
+        // Says it's over the cap; the client stops before reading it
+        res.writeHead(200, {
+          "content-type": "application/octet-stream",
+          "content-length": String(26 * 1024 * 1024),
+        });
+        return res.write(Buffer.alloc(1024));
+      case "/api/orders":
+        return setTimeout(
+          () =>
+            send(
+              200,
+              JSON.stringify(
+                SPA_ORDERS.map(({ tracking: _, ...order }) => order),
+              ),
+              "application/json",
+            ),
+          1200,
+        );
+      case "/api/cities": {
+        const query = (url.searchParams.get("q") ?? "").toLowerCase();
+        return setTimeout(
+          () =>
+            send(
+              200,
+              JSON.stringify(
+                CITIES.filter((c) => c.name.toLowerCase().startsWith(query)),
+              ),
+              "application/json",
+            ),
+          600,
+        );
+      }
       case "/favicon.ico":
         res.writeHead(204);
         return res.end();
@@ -310,6 +394,34 @@ export async function serveFixtures(): Promise<{
         return send(200, "body{}", "text/css");
     }
     if (TESTS[url.pathname]) return send(200, TESTS[url.pathname]);
+    // The checkout frames a page from the other loopback name, a different site, so Chrome puts it in its own process
+    const [hostname, port] = (req.headers.host ?? "").split(":");
+    const otherOrigin = `http://${hostname === "localhost" ? "127.0.0.1" : "localhost"}:${port}`;
+    const hard = hardFixture(url.pathname, otherOrigin);
+    if (hard) return send(200, hard);
+    const invoice = /^\/invoice\/(INV-\d+)$/.exec(url.pathname);
+    if (invoice) {
+      const key = url.searchParams.get("key") ?? "";
+      const valid = invoiceKeys.delete(key);
+      return send(
+        200,
+        invoicePage(
+          invoice[1],
+          valid ? INVOICE_AMOUNTS[invoice[1]] : undefined,
+        ),
+      );
+    }
+    const order = /^\/api\/orders\/(\d+)$/.exec(url.pathname);
+    if (order) {
+      const found = SPA_ORDERS.find((o) => o.id === Number(order[1]));
+      return setTimeout(
+        () =>
+          found
+            ? send(200, JSON.stringify(found), "application/json")
+            : send(404, "{}", "application/json"),
+        2000,
+      );
+    }
     if (url.pathname.startsWith("/product/")) {
       const name = decodeURIComponent(url.pathname.slice(9));
       const product = PRODUCTS.find((p) => p.name === name);

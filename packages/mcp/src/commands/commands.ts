@@ -27,6 +27,7 @@ import {
   StepError,
 } from "@/commands/output";
 import type { FlagSpec, ParsedArgs, Token } from "@/commands/parser";
+import { download, DOWNLOAD_MAX_BYTES, pdf } from "@/commands/save";
 import {
   find,
   findByRef,
@@ -405,6 +406,8 @@ function isSleep(args: ParsedArgs) {
 }
 
 /** `goto` and `tab new <url>`: up to 30 s to commit, then 10 s to load */
+/** Longest text `type` sends key by key: each key is a round trip to the browser (through the extension, for the user's Chrome), so longer text is inserted at once, which fields that react to keys still see as one input */
+const TYPE_KEYS_MAX_CHARS = 200;
 const NAVIGATION_STEP_MS = 45_000;
 const BODY_TIMEOUT_MS = 10_000;
 
@@ -637,7 +640,7 @@ export const COMMANDS: CommandDef[] = [
   {
     name: "fill",
     usage: 'fill <target> "<text>" [--submit]',
-    help: "Replaces the field's value (input, textarea, contenteditable). --submit presses Enter after. The text isn't echoed back.",
+    help: "Replaces the field's value (input, textarea, contenteditable) at once, without key presses. For a field that reacts to typing (autocomplete, search as you type), click it and use type. --submit presses Enter after. The text isn't echoed back.",
     flags: { submit: false },
     maxArgs: 2,
     // With one argument, it may be the text with the target missing, so it isn't echoed
@@ -662,12 +665,13 @@ export const COMMANDS: CommandDef[] = [
   },
   {
     name: "type",
-    usage: 'type "<text>" [--submit] [--slowly]   # into the focused element',
-    help: "Types into the focused element. --slowly sends one key at a time (for fields that react to keys), --submit presses Enter after. The text isn't echoed back.",
-    flags: { submit: false, slowly: false },
+    usage:
+      'type "<text>" [--submit] [--slowly] [--paste]   # key by key, into the focused element',
+    help: `Types into the focused element key by key, as a person would, so fields that react to keys (autocomplete, search as you type) respond. Text over ${TYPE_KEYS_MAX_CHARS} characters is inserted at once instead. --slowly waits between keys (for fields that drop fast keys), --paste inserts the text at once without key presses, --submit presses Enter after. The text isn't echoed back.`,
+    flags: { submit: false, slowly: false, paste: false },
     maxArgs: 1,
     echo: (args) =>
-      `type${args.flags.submit ? " --submit" : ""}${args.flags.slowly ? " --slowly" : ""}`,
+      `type${args.flags.submit ? " --submit" : ""}${args.flags.slowly ? " --slowly" : ""}${args.flags.paste ? " --paste" : ""}`,
     async run(ctx) {
       const page = await ctx.page();
       const text = positional(ctx.args, 0, '"<text>"');
@@ -682,8 +686,13 @@ export const COMMANDS: CommandDef[] = [
         );
       }
       await hiddenTabs.ensureVisible(page);
+      if (ctx.args.flags.slowly && ctx.args.flags.paste) {
+        throw new StepError("type takes --slowly or --paste, not both");
+      }
       if (ctx.args.flags.slowly) await page.keyboard.type(text, { delay: 30 });
-      else await page.keyboard.insertText(text);
+      else if (ctx.args.flags.paste || text.length > TYPE_KEYS_MAX_CHARS)
+        await page.keyboard.insertText(text);
+      else await page.keyboard.type(text);
       await fillLike(ctx, page, !!ctx.args.flags.submit);
     },
   },
@@ -1033,6 +1042,25 @@ export const COMMANDS: CommandDef[] = [
     flags: { full: false, path: true },
     maxArgs: 1,
     run: screenshot,
+  },
+  {
+    name: "pdf",
+    usage: "pdf [<path>] [--landscape]   # saves the page as a PDF",
+    help: "Prints the page to a PDF, as Chrome's Save as PDF does (print styles, backgrounds, the page size the page's CSS sets), and saves it to <path> (or --path), overwriting an existing file. Without <path>, it saves <page title>.pdf in your MCP root (or working directory), adding (1), (2)… rather than overwrite. Paths: absolute, under ~, or relative to your MCP root.",
+    flags: { landscape: false, path: true },
+    maxArgs: 1,
+    timeoutMs: () => TIMEOUT_MAX_MS,
+    run: pdf,
+  },
+  {
+    name: "download",
+    usage:
+      "download <url>|<target> [--path <file>]   # fetches a file as the page would",
+    help: `Fetches a file in the page, as its own scripts would (its cookies; another site's file needs CORS), and saves it. Takes a URL (absolute, or relative to the page: /, ./, ../, ?) or a link, image or media element (a ref or locator), whose href or src it fetches. Up to ${DOWNLOAD_MAX_BYTES / 1024 / 1024} MB. Saves to --path, overwriting an existing file, else under the server's file name, the link's download name or the URL's last segment in your MCP root (or working directory), adding (1), (2)… rather than overwrite. Doesn't click or open Chrome's downloads; for a file only a click produces, find its URL with \`requests\` or \`get attr href <target>\`.`,
+    flags: { path: true },
+    maxArgs: 1,
+    timeoutMs: () => TIMEOUT_MAX_MS,
+    run: download,
   },
   {
     name: "eval",
