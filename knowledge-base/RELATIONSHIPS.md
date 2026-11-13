@@ -69,7 +69,13 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 
 **Possible experiment:** create authorized sample media, test voice/video/3D workflows in isolated environments, and evaluate FFmpeg for conversion and final rendering. Obtain consent for any voice cloning and check platform rights for downloaded content.
 
-## 9. Making reusable knowledge durable
+## 9. Workflow orchestration
+
+- `n8n_chatbot` is a fork of the n8n workflow automation platform, not evidence that any chat automation has been deployed.
+- It could orchestrate approved jobs around research, media creation, and monitoring, but integrations with other forks remain unverified.
+- The fork's safe-upstream-sync workflow is currently missing; a GitHub integration write attempt returned HTTP 403. It requires repository write access before enrollment.
+
+## 10. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
