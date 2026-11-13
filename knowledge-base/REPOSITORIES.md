@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-12. All listed repositories are **public forks**. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
+As of 2026-11-13. All listed repositories are **public forks**. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -43,6 +43,14 @@ As of 2026-11-12. All listed repositories are **public forks**. GitHub repo desc
 | [setup-ipsec-vpn](https://github.com/SquaredMoe/setup-ipsec-vpn) | Network / VPN | Automates IPsec VPN server setup for IKEv2, IPsec/L2TP and Cisco IPsec, with client and management scripts | [hwdsl2/setup-ipsec-vpn](https://github.com/hwdsl2/setup-ipsec-vpn) | `master` | `vpnsetup.sh`, `vpnsetup_ubuntu.sh`, `vpnsetup_centos.sh`, `vpnsetup_alpine.sh`, `docs/`, `azure/` |
 | [awesome-selfhosted](https://github.com/SquaredMoe/awesome-selfhosted) | Reference / Self-hosting | Curated index of free software services and web apps you can host yourself | [awesome-selfhosted/awesome-selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) | `master` | `README.md`, `non-free.md`, `_static/` |
 | [sherlock](https://github.com/SquaredMoe/sherlock) | Research / OSINT | Checks public social-network username presence across supported sites | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | `master` | `docs/README.md`, `sherlock_project/`, `pyproject.toml`, `tests/` |
+
+| [stitch-skills](https://github.com/SquaredMoe/stitch-skills) | Design / Agent skills | Google Stitch MCP design, build and utility skills for coding agents | [google-labs-code/stitch-skills](https://github.com/google-labs-code/stitch-skills) | `main` | `plugins/`, `.agents/`, `README.md` |
+| [VoiceStudio](https://github.com/SquaredMoe/VoiceStudio) | Creator / Audio | Locally run AI voice cloning, dubbing, transcription and narration platform (README claims) | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | `main` | `backend/`, `cli/`, `docs/`, `README.md` |
+| [FFmpeg](https://github.com/SquaredMoe/FFmpeg) | Creator / Media | Audio/video/subtitle processing libraries and command-line tools | [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg) | `master` | `libavcodec/`, `libavformat/`, `libavfilter/`, `fftools/` |
+| [OpenMontage](https://github.com/SquaredMoe/OpenMontage) | Creator / Video | Agent-oriented video production framework and workflows (project claims) | [OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) | `main` | `docs/`, `assets/`, `AGENT_GUIDE.md`, `README.md` |
+| [yt-dlp](https://github.com/SquaredMoe/yt-dlp) | Creator / Media | Command-line audio and video downloader for supported websites | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | `master` | `yt_dlp/`, `pyproject.toml`, `supportedsites.md` |
+| [fb_reel_dl](https://github.com/SquaredMoe/fb_reel_dl) | Creator / Media | Facebook Reels bulk download utility built with Playwright and yt-dlp | [nanofatdog/fb_reel_dl](https://github.com/nanofatdog/fb_reel_dl) | `main` | `src/`, `run.py`, `pyproject.toml`, `README.md` |
+| [img2threejs](https://github.com/SquaredMoe/img2threejs) | Design / 3D | Reference-image-to-procedural Three.js model tooling | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | `main` | `forge/`, `scripts/`, `SKILL.md`, `package.json` |
 
 ## Reading order
 
