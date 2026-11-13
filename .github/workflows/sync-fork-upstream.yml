@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: daily-safe-upstream-sync
@@ -13,13 +13,16 @@ concurrency:
 
 jobs:
   update:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
       - name: Check out this fork
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Merge original repository updates safely
         env:
@@ -69,5 +72,5 @@ jobs:
           fi
 
           git commit -m "chore(sync): merge upstream changes"
-          git push origin "HEAD:refs/heads/${TARGET_BRANCH}"
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $(printf 'x-access-token:%s' "${GH_TOKEN}" | base64 -w0)" push origin "HEAD:refs/heads/${TARGET_BRANCH}"
           echo "Updated from ${parent} (${parent_branch}) without overwriting existing commits or GitHub workflow files." >> "${GITHUB_STEP_SUMMARY}"
