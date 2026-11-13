@@ -60,7 +60,16 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 
 **Possible experiment:** shortlist self-hosted tooling against cost, security, maintenance, and resource requirements. For username research, test only legitimate public-profile lookups, avoid misidentifying people (a matching username does not prove identity), and respect platform and privacy requirements.
 
-## 8. Making reusable knowledge durable
+## 8. Design, 3D and video production candidates
+
+- `stitch-skills` provides agent-oriented design/build workflows for Google Stitch; `img2threejs` describes reconstructing procedural Three.js models from reference images.
+- `VoiceStudio` focuses on local AI voice workflows, `OpenMontage` on agent-oriented video production, and `FFmpeg` on multimedia encoding, filtering and format processing.
+- `yt-dlp` and `fb_reel_dl` provide download utilities; use them only for content you have permission to access and download. `fb_reel_dl` documents its use of yt-dlp but this does not mean the two forks are configured together.
+- These projects may be candidates for an approved asset-production pipeline, but compatibility, licenses, performance and actual integration remain unverified.
+
+**Possible experiment:** create authorized sample media, test voice/video/3D workflows in isolated environments, and evaluate FFmpeg for conversion and final rendering. Obtain consent for any voice cloning and check platform rights for downloaded content.
+
+## 9. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
