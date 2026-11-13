@@ -52,6 +52,8 @@ As of 2026-11-13. All listed repositories are **public forks**. GitHub repo desc
 | [fb_reel_dl](https://github.com/SquaredMoe/fb_reel_dl) | Creator / Media | Facebook Reels bulk download utility built with Playwright and yt-dlp | [nanofatdog/fb_reel_dl](https://github.com/nanofatdog/fb_reel_dl) | `main` | `src/`, `run.py`, `pyproject.toml`, `README.md` |
 | [img2threejs](https://github.com/SquaredMoe/img2threejs) | Design / 3D | Reference-image-to-procedural Three.js model tooling | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | `main` | `forge/`, `scripts/`, `SKILL.md`, `package.json` |
 
+| [n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) | Agent tooling / Automation | Self-hostable workflow automation platform with integrations and AI workflow features | [n8n-io/n8n](https://github.com/n8n-io/n8n) | `master` | `packages/`, `docker/`, `README.md`, `package.json` |
+
 ## Reading order
 
 1. Open a repository's README and its `AGENTS.md` / `CLAUDE.md` (when present) for operator expectations.
