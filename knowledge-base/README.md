@@ -1,16 +1,16 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-13 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 46 accessible public repositories.
+> **Snapshot:** 2026-11-13 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 47 verified public forks (46 returned in the account list plus one directly verified).
 
 ## What this is
 
-An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 46 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
+An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 47 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
 
 Use the connected GitHub repository files as the source of truth for any implementation. Re-read the exact files and current branches before editing, combining, installing, or deploying anything. Assume README features and marketing claims are claims by upstream authors until independently verified.
 
 ## Navigation
 
-- [Repository catalog (all 46)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 47)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -54,6 +54,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [agency-agents](https://github.com/SquaredMoe/agency-agents)
 - [caveman-token-reduction](https://github.com/SquaredMoe/caveman-token-reduction)
 - [mcp](https://github.com/SquaredMoe/mcp)
+- [n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) — n8n automation platform
 
 ### Security & reverse engineering
 - [strix-security](https://github.com/SquaredMoe/strix-security)
