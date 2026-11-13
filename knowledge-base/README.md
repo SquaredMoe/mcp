@@ -1,16 +1,16 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-12 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 39 accessible public repositories.
+> **Snapshot:** 2026-11-13 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 46 accessible public repositories.
 
 ## What this is
 
-An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 39 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
+An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 46 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
 
 Use the connected GitHub repository files as the source of truth for any implementation. Re-read the exact files and current branches before editing, combining, installing, or deploying anything. Assume README features and marketing claims are claims by upstream authors until independently verified.
 
 ## Navigation
 
-- [Repository catalog (all 39)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 46)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -22,6 +22,8 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [mojs-web-design-animator](https://github.com/SquaredMoe/mojs-web-design-animator)
 - [impeccable](https://github.com/SquaredMoe/impeccable)
 - [uikit-frontend](https://github.com/SquaredMoe/uikit-frontend)
+- [stitch-skills](https://github.com/SquaredMoe/stitch-skills)
+- [img2threejs](https://github.com/SquaredMoe/img2threejs)
 
 ### Content creation, media & publishing
 - [PicGo-image-creator](https://github.com/SquaredMoe/PicGo-image-creator)
@@ -30,6 +32,11 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [open-higgsfield-imaging](https://github.com/SquaredMoe/open-higgsfield-imaging)
 - [hyperframes](https://github.com/SquaredMoe/hyperframes)
 - [Open-Generative-AI](https://github.com/SquaredMoe/Open-Generative-AI)
+- [VoiceStudio](https://github.com/SquaredMoe/VoiceStudio)
+- [FFmpeg](https://github.com/SquaredMoe/FFmpeg)
+- [OpenMontage](https://github.com/SquaredMoe/OpenMontage)
+- [yt-dlp](https://github.com/SquaredMoe/yt-dlp)
+- [fb_reel_dl](https://github.com/SquaredMoe/fb_reel_dl)
 
 ### Trading, investing & finance
 - [TradingAgents](https://github.com/SquaredMoe/TradingAgents)
