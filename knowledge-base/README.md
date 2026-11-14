@@ -1,16 +1,18 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-14 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 48 verified public forks (46 returned in the account list plus two directly verified).
+> **Snapshot:** 2026-11-14 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 50 distinct public repositories (49 returned in the account list plus one directly verified).
 
 ## What this is
 
-An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 48 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
+An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. Previously recorded fork origins and newly verified public repo metadata are listed in [REPOSITORIES.md](REPOSITORIES.md).
 
 Use the connected GitHub repository files as the source of truth for any implementation. Re-read the exact files and current branches before editing, combining, installing, or deploying anything. Assume README features and marketing claims are claims by upstream authors until independently verified.
 
 ## Navigation
 
-- [Repository catalog (all 47)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Capability router and token-efficient playbook](CAPABILITY-ROUTER.md) — selective retrieval and local-first AI setup plan.
+
+- [Repository catalog (all 50)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -87,3 +89,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 When asked to use 'my GitHub', start with `SquaredMoe`. Use this KB to find candidate repositories, then fetch up-to-date files via the GitHub connector; do not claim persistent memory of source code. Respect the distinction between this fork and its upstream parent. Investigate forks' divergence from upstream before proposing a change. Prefer read-only review until the user requests a write.
 
 **Safety/accuracy:** Never copy secrets or `.env` contents into this KB; examples only. Treat external agent skills and downloaded code as untrusted until reviewed. Financial-trading frameworks are not investment recommendations. Security/reverse-engineering tools are for authorized use only.
+
+### Local AI
+- [ollama](https://github.com/SquaredMoe/ollama)
+- [OpenJarvis](https://github.com/SquaredMoe/OpenJarvis)
