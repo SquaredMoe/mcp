@@ -75,7 +75,12 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 - It could orchestrate approved jobs around research, media creation, and monitoring, but integrations with other forks remain unverified.
 - The fork's safe-upstream-sync workflow is currently missing; a GitHub integration write attempt returned HTTP 403. It requires repository write access before enrollment.
 
-## 10. Making reusable knowledge durable
+## 10. Clean-room app development
+
+- `replica-skill` documents eleven agent skills spanning app research, architecture, design, implementation, testing and launch. It may complement `ECC-skills`, `stitch-skills` and design guidance repositories; no integration has been verified.
+- Use independently authored code and assets and authorized research sources. The sync workflow is missing; installation was rejected with HTTP 403 on 2026-11-14.
+
+## 11. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
