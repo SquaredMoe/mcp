@@ -1,10 +1,10 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-13 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 47 verified public forks (46 returned in the account list plus one directly verified).
+> **Snapshot:** 2026-11-14 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 48 verified public forks (46 returned in the account list plus two directly verified).
 
 ## What this is
 
-An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 47 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
+An evidence-based starting point for locating code, understanding repository purposes, and planning work across this GitHub account. The inventory was compiled from GitHub repository metadata, top-level directory listings, and approximately the first 150–180 lines of each available README. **This is NOT a full source-code audit**, a security review, proof that the projects are installed, or a statement that the account owner originally authored them. GitHub identifies **all 48 as public forks** of the upstream projects recorded in [REPOSITORIES.md](REPOSITORIES.md).
 
 Use the connected GitHub repository files as the source of truth for any implementation. Re-read the exact files and current branches before editing, combining, installing, or deploying anything. Assume README features and marketing claims are claims by upstream authors until independently verified.
 
@@ -54,6 +54,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [agency-agents](https://github.com/SquaredMoe/agency-agents)
 - [caveman-token-reduction](https://github.com/SquaredMoe/caveman-token-reduction)
 - [mcp](https://github.com/SquaredMoe/mcp)
+- [replica-skill](https://github.com/SquaredMoe/replica-skill) — clean-room app development agent skills
 - [n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) — n8n automation platform
 
 ### Security & reverse engineering
