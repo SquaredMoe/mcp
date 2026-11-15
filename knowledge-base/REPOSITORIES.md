@@ -52,9 +52,8 @@ As of 2026-11-14. The account listing returned 49 accessible repositories. `n8n_
 | [img2threejs](https://github.com/SquaredMoe/img2threejs) | Design / 3D | Reference-image-to-procedural Three.js model tooling | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | `main` | `forge/`, `scripts/`, `SKILL.md`, `package.json` |
 | [n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) | Agent tooling / Automation | Self-hostable workflow automation platform with integrations and AI workflow features | [n8n-io/n8n](https://github.com/n8n-io/n8n) | `master` | `packages/`, `docker/`, `README.md`, `package.json` |
 | [replica-skill](https://github.com/SquaredMoe/replica-skill) | Agent tooling / App development | Eleven skills for clean-room app research, design, development, testing and launch | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | `main` | `README.md`, `replica-architect/`, `replica-build/`, `replica-test/`, `tests/` |
-
-| [ollama](https://github.com/SquaredMoe/ollama) | Local AI | Local model inference and API | [ollama/ollama](https://github.com/ollama/ollama) | `main` | `README.md`, official documentation |
-| [OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | Local AI / Agents | Local-first personal AI framework and evaluation tooling | [OpenJarvis project](https://open-jarvis.github.io/OpenJarvis/) | `main` | `README.md`, project documentation |
+| [ollama](https://github.com/SquaredMoe/ollama) | Local AI | Local model inference and API | [ollama/ollama](https://github.com/ollama/ollama) | `main` | `README.md`, `api/`, `server/`, `llm/`, `go.mod` |
+| [OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | Local AI / Agents | Local-first personal AI framework and evaluation tooling | [open-jarvis/OpenJarvis](https://github.com/open-jarvis/OpenJarvis) | `main` | `README.md`, `src/`, `docs/`, `pyproject.toml`, `tests/` |
 
 ## Reading order
 
