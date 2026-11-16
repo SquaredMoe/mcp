@@ -80,7 +80,12 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 - `replica-skill` documents eleven agent skills spanning app research, architecture, design, implementation, testing and launch. It may complement `ECC-skills`, `stitch-skills` and design guidance repositories; no integration has been verified.
 - Use independently authored code and assets and authorized research sources. The sync workflow is missing; installation was rejected with HTTP 403 on 2026-11-14.
 
-## 11. Making reusable knowledge durable
+## 11. Agent orchestration and API services
+
+- `ruflo` documents agent orchestration, hooks, memory and MCP for coding agents. Evaluate compatibility and permissions before combining with existing agent tooling.
+- `fastapi` provides Python API infrastructure for potential backend services, including demo trading dashboards and agent services. No integration or deployment has been verified.
+
+## 12. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
