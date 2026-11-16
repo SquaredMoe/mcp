@@ -1,6 +1,6 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-14 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 50 distinct public repositories (49 returned in the account list plus one directly verified).
+> **Snapshot:** 2026-11-16 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 52 distinct public repositories (51 returned in the account list plus one directly verified).
 
 ## What this is
 
@@ -12,7 +12,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 
 - [Capability router and token-efficient playbook](CAPABILITY-ROUTER.md) — selective retrieval and local-first AI setup plan.
 
-- [Repository catalog (all 50)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 52)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -48,7 +48,11 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [Vibe-Trading](https://github.com/SquaredMoe/Vibe-Trading)
 - [FinceptTerminal](https://github.com/SquaredMoe/FinceptTerminal)
 
+### Backend development
+- [fastapi](https://github.com/SquaredMoe/fastapi) — Python API framework
+
 ### Agent infrastructure & workflows
+- [ruflo](https://github.com/SquaredMoe/ruflo) — agent orchestration harness
 - [OfficeCLI](https://github.com/SquaredMoe/OfficeCLI)
 - [ECC-skills](https://github.com/SquaredMoe/ECC-skills)
 - [skills-for-fabric](https://github.com/SquaredMoe/skills-for-fabric)
