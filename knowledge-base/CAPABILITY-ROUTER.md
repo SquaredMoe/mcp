@@ -1,12 +1,14 @@
 # Capability router and token-efficient operating playbook
 
-Updated 2026-11-14. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
+Updated 2026-11-16. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
 
 ## Routing table
 
 | Task | First choice | Add only when needed |
 | --- | --- | --- |
 | Local assistant / inference | ollama, OpenJarvis | OmniRoute, caveman-token-reduction, mcp |
+| Backend API development | fastapi | ECC-skills, replica-skill |
+| Multi-agent coding orchestration | ruflo | ECC-skills, agency-agents |
 | Coding / app development | ECC-skills, replica-skill | agency-agents, impeccable, stitch-skills |
 | UI / ecommerce | ui-ux-pro-max-skill, stitch-skills | impeccable, uikit-frontend, mojs-web-design-animator, img2threejs, design-resources-for-developers |
 | Trading research / demo system | TradingAgents, nautilus_trader | trader-skill, day-trader-skill, Vibe-Trading, FinceptTerminal |
