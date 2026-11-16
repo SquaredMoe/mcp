@@ -2,9 +2,9 @@
 
 > Automatically generated. **This report does not itself sync code.** Each fork's own GitHub Actions workflow performs synchronization.
 
-**Last check:** 2026-11-15 17:12 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
+**Last check:** 2026-11-16 02:10 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
 
-**Public forks:** **51** &nbsp; · &nbsp; **Healthy:** **40** &nbsp; · &nbsp; **Needs attention:** **11** &nbsp; · &nbsp; **Pending/other:** **0**
+**Public forks:** **52** &nbsp; · &nbsp; **Healthy:** **40** &nbsp; · &nbsp; **Needs attention:** **12** &nbsp; · &nbsp; **Pending/other:** **0**
 
 **New-fork discovery:** automatic &nbsp; · &nbsp; **New-fork installation:** Read-only controller (ChatGPT daily task also attempts onboarding)
 
@@ -23,6 +23,7 @@
 | [SquaredMoe/day-trader-skill](https://github.com/SquaredMoe/day-trader-skill) | Jakeschincariol/day-trader-skill | [✅ Healthy](https://github.com/SquaredMoe/day-trader-skill/actions/runs/43712977828) | 2026-11-15 12:16 UTC |
 | [SquaredMoe/design-resources-for-developers](https://github.com/SquaredMoe/design-resources-for-developers) | bradtraversy/design-resources-for-developers | [✅ Healthy](https://github.com/SquaredMoe/design-resources-for-developers/actions/runs/43713254744) | 2026-11-15 12:19 UTC |
 | [SquaredMoe/ECC-skills](https://github.com/SquaredMoe/ECC-skills) | affaan-m/ECC | [✅ Healthy](https://github.com/SquaredMoe/ECC-skills/actions/runs/43714379554) | 2026-11-15 12:32 UTC |
+| [SquaredMoe/fastapi](https://github.com/SquaredMoe/fastapi) | fastapi/fastapi | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/fastapi/actions/workflows/sync-fork-upstream.yml) | — |
 | [SquaredMoe/fb_reel_dl](https://github.com/SquaredMoe/fb_reel_dl) | nanofatdog/fb_reel_dl | [✅ Healthy](https://github.com/SquaredMoe/fb_reel_dl/actions/runs/43715269732) | 2026-11-15 12:43 UTC |
 | [SquaredMoe/FFmpeg](https://github.com/SquaredMoe/FFmpeg) | FFmpeg/FFmpeg | [✅ Healthy](https://github.com/SquaredMoe/FFmpeg/actions/runs/43715181623) | 2026-11-15 12:42 UTC |
 | [SquaredMoe/FinceptTerminal](https://github.com/SquaredMoe/FinceptTerminal) | Fincept-Corporation/FinceptTerminal | [✅ Healthy](https://github.com/SquaredMoe/FinceptTerminal/actions/runs/43715406201) | 2026-11-15 12:44 UTC |
