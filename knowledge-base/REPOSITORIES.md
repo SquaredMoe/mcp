@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-14. The account listing returned 49 accessible repositories. `n8n_chatbot` was also directly verified as public despite being omitted from that listing, for 50 distinct public repositories in this catalog. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
+As of 2026-11-16. The account listing returned 51 accessible repositories. `n8n_chatbot` was also directly verified as public despite being omitted from that listing, for 52 distinct public repositories in this catalog. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -54,6 +54,8 @@ As of 2026-11-14. The account listing returned 49 accessible repositories. `n8n_
 | [replica-skill](https://github.com/SquaredMoe/replica-skill) | Agent tooling / App development | Eleven skills for clean-room app research, design, development, testing and launch | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | `main` | `README.md`, `replica-architect/`, `replica-build/`, `replica-test/`, `tests/` |
 | [ollama](https://github.com/SquaredMoe/ollama) | Local AI | Local model inference and API | [ollama/ollama](https://github.com/ollama/ollama) | `main` | `README.md`, `api/`, `server/`, `llm/`, `go.mod` |
 | [OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | Local AI / Agents | Local-first personal AI framework and evaluation tooling | [open-jarvis/OpenJarvis](https://github.com/open-jarvis/OpenJarvis) | `main` | `README.md`, `src/`, `docs/`, `pyproject.toml`, `tests/` |
+| [ruflo](https://github.com/SquaredMoe/ruflo) | Agent tooling | Agent orchestration harness for Claude Code and Codex, with MCP, hooks and memory features | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `main` | `README.md`, `docs/`, `package.json`, `plugins/`, `crates/`, `tests/` |
+| [fastapi](https://github.com/SquaredMoe/fastapi) | Backend / API | Python web API framework using type hints and OpenAPI | [fastapi/fastapi](https://github.com/fastapi/fastapi) | `master` | `fastapi/`, `docs/`, `docs_src/`, `pyproject.toml`, `tests/` |
 
 ## Reading order
 
