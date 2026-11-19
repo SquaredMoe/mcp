@@ -6,6 +6,7 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 
 - `ui-ux-pro-max-skill` can supply design-system prompts and references.
 - `impeccable` can guide UI critiques and design refinement.
+- `unslop` documents iterative UI audits and refinement passes; evaluate alongside impeccable, not as a verified integration.
 - `uikit-frontend` provides frontend building blocks; `mojs-web-design-animator` covers animation.
 - `design-resources-for-developers` is a source directory, not a runtime dependency.
 
