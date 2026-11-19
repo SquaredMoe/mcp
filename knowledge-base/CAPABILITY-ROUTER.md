@@ -1,6 +1,6 @@
 # Capability router and token-efficient operating playbook
 
-Updated 2026-11-16. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
+Updated 2026-11-19. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
 
 ## Routing table
 
@@ -10,7 +10,7 @@ Updated 2026-11-16. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for 
 | Backend API development | fastapi | ECC-skills, replica-skill |
 | Multi-agent coding orchestration | ruflo | ECC-skills, agency-agents |
 | Coding / app development | ECC-skills, replica-skill | agency-agents, impeccable, stitch-skills |
-| UI / ecommerce | ui-ux-pro-max-skill, stitch-skills | impeccable, uikit-frontend, mojs-web-design-animator, img2threejs, design-resources-for-developers |
+| UI / ecommerce | ui-ux-pro-max-skill, stitch-skills | unslop, impeccable, uikit-frontend, mojs-web-design-animator, img2threejs, design-resources-for-developers |
 | Trading research / demo system | TradingAgents, nautilus_trader | trader-skill, day-trader-skill, Vibe-Trading, FinceptTerminal |
 | Social research / publishing | social-media-research-skills, postiz-app-social-media | Agent-Reach, claude-seo, claude-ads |
 | Media creation | OpenMontage, FFmpeg | VoiceStudio, hyperframes, OpenCreator-content-creator, Open-Generative-AI, open-higgsfield-imaging, PicGo-image-creator |
