@@ -1,6 +1,6 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-16 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 52 distinct public repositories (51 returned in the account list plus one directly verified).
+> **Snapshot:** 2026-11-19 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 53 distinct public repositories (including one directly verified outside the listing).
 
 ## What this is
 
@@ -12,7 +12,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 
 - [Capability router and token-efficient playbook](CAPABILITY-ROUTER.md) — selective retrieval and local-first AI setup plan.
 
-- [Repository catalog (all 52)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 53)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -26,6 +26,8 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [uikit-frontend](https://github.com/SquaredMoe/uikit-frontend)
 - [stitch-skills](https://github.com/SquaredMoe/stitch-skills)
 - [img2threejs](https://github.com/SquaredMoe/img2threejs)
+
+- [unslop](https://github.com/SquaredMoe/unslop) — UI audit and refinement skill
 
 ### Content creation, media & publishing
 - [PicGo-image-creator](https://github.com/SquaredMoe/PicGo-image-creator)
