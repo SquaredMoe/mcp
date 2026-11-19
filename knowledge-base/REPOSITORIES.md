@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-16. The account listing returned 51 accessible repositories. `n8n_chatbot` was also directly verified as public despite being omitted from that listing, for 52 distinct public repositories in this catalog. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. GitHub repo description and README supply purpose; path hints come from repository root listings, not exhaustive dependency tracing.
+As of 2026-11-19. The public catalog contains 53 distinct repositories, including directly verified n8n_chatbot. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. Path hints come from root listings.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -56,6 +56,7 @@ As of 2026-11-16. The account listing returned 51 accessible repositories. `n8n_
 | [OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | Local AI / Agents | Local-first personal AI framework and evaluation tooling | [open-jarvis/OpenJarvis](https://github.com/open-jarvis/OpenJarvis) | `main` | `README.md`, `src/`, `docs/`, `pyproject.toml`, `tests/` |
 | [ruflo](https://github.com/SquaredMoe/ruflo) | Agent tooling | Agent orchestration harness for Claude Code and Codex, with MCP, hooks and memory features | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `main` | `README.md`, `docs/`, `package.json`, `plugins/`, `crates/`, `tests/` |
 | [fastapi](https://github.com/SquaredMoe/fastapi) | Backend / API | Python web API framework using type hints and OpenAPI | [fastapi/fastapi](https://github.com/fastapi/fastapi) | `master` | `fastapi/`, `docs/`, `docs_src/`, `pyproject.toml`, `tests/` |
+| [unslop](https://github.com/SquaredMoe/unslop) | Design / Agent skills | UI audit and iterative visual refinement for coding agents | [heydamir/unslop](https://github.com/heydamir/unslop) | `main` | `README.md`, `skills/`, `examples/`, `test/` |
 
 ## Reading order
 
