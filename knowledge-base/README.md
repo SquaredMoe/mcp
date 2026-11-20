@@ -1,6 +1,6 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-19 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 53 distinct public repositories (including one directly verified outside the listing).
+> **Snapshot:** 2026-11-20 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 64 distinct public repositories (including one directly verified outside the listing).
 
 ## What this is
 
@@ -12,7 +12,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 
 - [Capability router and token-efficient playbook](CAPABILITY-ROUTER.md) — selective retrieval and local-first AI setup plan.
 
-- [Repository catalog (all 53)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 64)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
@@ -89,6 +89,19 @@ Use the connected GitHub repository files as the source of truth for any impleme
 - [system-prompts-and-models-of-ai-tools](https://github.com/SquaredMoe/system-prompts-and-models-of-ai-tools)
 - [awesome-mcp-servers](https://github.com/SquaredMoe/awesome-mcp-servers)
 - [awesome-selfhosted](https://github.com/SquaredMoe/awesome-selfhosted) — self-hostable software directory
+
+### Speech, language, vision and browser tools
+- [Arabizi-Transliteration](https://github.com/SquaredMoe/Arabizi-Transliteration) — Arabic NLP
+- [arabic_jailbreak](https://github.com/SquaredMoe/arabic_jailbreak) — Safety research
+- [Lebanese-Villages-List](https://github.com/SquaredMoe/Lebanese-Villages-List) — Geographic data
+- [speechbrain](https://github.com/SquaredMoe/speechbrain) — Speech AI
+- [whisper.cpp](https://github.com/SquaredMoe/whisper.cpp) — Speech AI
+- [whisper](https://github.com/SquaredMoe/whisper) — Speech AI
+- [Qwen3-VL](https://github.com/SquaredMoe/Qwen3-VL) — Vision AI
+- [claude-eyes](https://github.com/SquaredMoe/claude-eyes) — Video analysis
+- [remotion](https://github.com/SquaredMoe/remotion) — Video creation
+- [browser-harness](https://github.com/SquaredMoe/browser-harness) — Browser automation
+- [obscura](https://github.com/SquaredMoe/obscura) — Browser automation
 
 ## Handoff context for an AI assistant
 
