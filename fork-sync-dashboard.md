@@ -2,9 +2,9 @@
 
 > Automatically generated. **This report does not itself sync code.** Each fork's own GitHub Actions workflow performs synchronization.
 
-**Last check:** 2026-11-19 18:59 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
+**Last check:** 2026-11-20 03:17 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
 
-**Public forks:** **63** &nbsp; · &nbsp; **Healthy:** **39** &nbsp; · &nbsp; **Needs attention:** **23** &nbsp; · &nbsp; **Pending/other:** **1**
+**Public forks:** **64** &nbsp; · &nbsp; **Healthy:** **39** &nbsp; · &nbsp; **Needs attention:** **24** &nbsp; · &nbsp; **Pending/other:** **1**
 
 **New-fork discovery:** automatic &nbsp; · &nbsp; **New-fork installation:** Read-only controller (ChatGPT daily task also attempts onboarding)
 
@@ -40,6 +40,7 @@
 | [SquaredMoe/mojs-web-design-animator](https://github.com/SquaredMoe/mojs-web-design-animator) | mojs/mojs | [✅ Healthy](https://github.com/SquaredMoe/mojs-web-design-animator/actions/runs/44546574113) | 2026-11-19 14:41 UTC |
 | [SquaredMoe/n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) | n8n-io/n8n | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/n8n_chatbot/actions/workflows/sync-fork-upstream.yml) | — |
 | [SquaredMoe/nautilus_trader](https://github.com/SquaredMoe/nautilus_trader) | nautechsystems/nautilus_trader | [🔴 Failure](https://github.com/SquaredMoe/nautilus_trader/actions/runs/44557126225) | 2026-11-19 15:38 UTC |
+| [SquaredMoe/obscura](https://github.com/SquaredMoe/obscura) | h4ckf0r0day/obscura | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/obscura/actions/workflows/sync-fork-upstream.yml) | — |
 | [SquaredMoe/OfficeCLI](https://github.com/SquaredMoe/OfficeCLI) | iOfficeAI/OfficeCLI | [✅ Healthy](https://github.com/SquaredMoe/OfficeCLI/actions/runs/44557682297) | 2026-11-19 15:41 UTC |
 | [SquaredMoe/ollama](https://github.com/SquaredMoe/ollama) | ollama/ollama | [✅ Healthy](https://github.com/SquaredMoe/ollama/actions/runs/44546217155) | 2026-11-19 14:39 UTC |
 | [SquaredMoe/OmniRoute](https://github.com/SquaredMoe/OmniRoute) | cheaper-inference/OmniRoute | [🔴 Failure](https://github.com/SquaredMoe/OmniRoute/actions/runs/44558405471) | 2026-11-19 15:45 UTC |
