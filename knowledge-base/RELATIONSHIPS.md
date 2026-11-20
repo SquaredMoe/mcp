@@ -86,7 +86,14 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 - `ruflo` documents agent orchestration, hooks, memory and MCP for coding agents. Evaluate compatibility and permissions before combining with existing agent tooling.
 - `fastapi` provides Python API infrastructure for potential backend services, including demo trading dashboards and agent services. No integration or deployment has been verified.
 
-## 12. Making reusable knowledge durable
+## 12. Language, speech, vision and video
+
+- Whisper, whisper.cpp and SpeechBrain are candidates for transcription and speech processing; compare accuracy and hardware needs before use.
+- Arabizi-Transliteration and Lebanese-Villages-List cover distinct Arabic language and geographic-name tasks. Arabic jailbreak research is a defensive model-safety reference only.
+- Qwen3-VL and claude-eyes may support visual/video analysis; Remotion supports React-based video authoring. Browser-harness and obscura are candidates for authorized browser automation. Protect session credentials and respect site permissions.
+- All combinations remain untested; check licensing and dependencies before use.
+
+## 13. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
