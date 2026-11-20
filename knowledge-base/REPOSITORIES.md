@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-19. The public catalog contains 53 distinct repositories, including directly verified n8n_chatbot. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. Path hints come from root listings.
+As of 2026-11-20. The public catalog contains 64 distinct repositories, including directly verified n8n_chatbot. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. Path hints come from root listings.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -57,6 +57,18 @@ As of 2026-11-19. The public catalog contains 53 distinct repositories, includin
 | [ruflo](https://github.com/SquaredMoe/ruflo) | Agent tooling | Agent orchestration harness for Claude Code and Codex, with MCP, hooks and memory features | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | `main` | `README.md`, `docs/`, `package.json`, `plugins/`, `crates/`, `tests/` |
 | [fastapi](https://github.com/SquaredMoe/fastapi) | Backend / API | Python web API framework using type hints and OpenAPI | [fastapi/fastapi](https://github.com/fastapi/fastapi) | `master` | `fastapi/`, `docs/`, `docs_src/`, `pyproject.toml`, `tests/` |
 | [unslop](https://github.com/SquaredMoe/unslop) | Design / Agent skills | UI audit and iterative visual refinement for coding agents | [heydamir/unslop](https://github.com/heydamir/unslop) | `main` | `README.md`, `skills/`, `examples/`, `test/` |
+
+| [Arabizi-Transliteration](https://github.com/SquaredMoe/Arabizi-Transliteration) | Arabic NLP | Arabizi-to-Arabic transliteration research and parallel corpus | [bashartalafha/Arabizi-Transliteration](https://github.com/bashartalafha/Arabizi-Transliteration) | `master` | `seq2seq.py`, `models/`, `README.md` |
+| [arabic_jailbreak](https://github.com/SquaredMoe/arabic_jailbreak) | Safety research | Cross-lingual model safety evaluation research | [SecureDL/arabic_jailbreak](https://github.com/SecureDL/arabic_jailbreak) | `main` | `README.md`, `data/` |
+| [Lebanese-Villages-List](https://github.com/SquaredMoe/Lebanese-Villages-List) | Geographic data | Arabic and Latin Lebanese village-name mapping | [EbrahimKaram/Lebanese-Villages-List](https://github.com/EbrahimKaram/Lebanese-Villages-List) | `master` | `README.md`, `GeoJSON Data/`, `docs/` |
+| [speechbrain](https://github.com/SquaredMoe/speechbrain) | Speech AI | PyTorch speech toolkit | [speechbrain/speechbrain](https://github.com/speechbrain/speechbrain) | `develop` | `speechbrain/`, `recipes/`, `docs/` |
+| [whisper.cpp](https://github.com/SquaredMoe/whisper.cpp) | Speech AI | C/C++ Whisper inference | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | `master` | `src/`, `examples/`, `CMakeLists.txt` |
+| [whisper](https://github.com/SquaredMoe/whisper) | Speech AI | Multilingual speech recognition and translation | [openai/whisper](https://github.com/openai/whisper) | `main` | `whisper/`, `model-card.md`, `tests/` |
+| [Qwen3-VL](https://github.com/SquaredMoe/Qwen3-VL) | Vision AI | Multimodal language model documentation and utilities | [QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL) | `main` | `cookbooks/`, `evaluation/`, `qwen-vl-utils/` |
+| [claude-eyes](https://github.com/SquaredMoe/claude-eyes) | Video analysis | Local video indexing and analysis for coding agents | [moritzkremb/claude-eyes](https://github.com/moritzkremb/claude-eyes) | `main` | `src/`, `skills/`, `docs/` |
+| [remotion](https://github.com/SquaredMoe/remotion) | Video creation | Programmatic React video creation | [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | `main` | `packages/`, `package.json`, `README.md` |
+| [browser-harness](https://github.com/SquaredMoe/browser-harness) | Browser automation | Browser automation for coding agents with user-authorized sessions | [browser-use/browser-harness](https://github.com/browser-use/browser-harness) | `main` | `src/`, `docs/`, `SKILL.md` |
+| [obscura](https://github.com/SquaredMoe/obscura) | Browser automation | Rust headless browser for web automation | [h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) | `main` | `crates/`, `docs/`, `Cargo.toml` |
 
 ## Reading order
 
