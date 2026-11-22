@@ -70,6 +70,10 @@ As of 2026-11-20. The public catalog contains 64 distinct repositories, includin
 | [browser-harness](https://github.com/SquaredMoe/browser-harness) | Browser automation | Browser automation for coding agents with user-authorized sessions | [browser-use/browser-harness](https://github.com/browser-use/browser-harness) | `main` | `src/`, `docs/`, `SKILL.md` |
 | [obscura](https://github.com/SquaredMoe/obscura) | Browser automation | Rust headless browser for web automation | [h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) | `main` | `crates/`, `docs/`, `Cargo.toml` |
 
+| [exercises-dataset](https://github.com/SquaredMoe/exercises-dataset) | Fitness data | Exercise dataset with instructions, thumbnails and animated demonstrations (media licensing requires separate review) | [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset) | `main` | `data/`, `images/`, `videos/`, `README.md` |
+| [workout-cool](https://github.com/SquaredMoe/workout-cool) | Fitness application | Self-hostable fitness coaching, exercise library and workout planning web platform | [Snouzy/workout-cool](https://github.com/Snouzy/workout-cool) | `main` | `app/`, `src/`, `prisma/`, `package.json`, `docker-compose.yml` |
+| [wger](https://github.com/SquaredMoe/wger) | Fitness / nutrition | Self-hostable workout, nutrition and body-measurement manager with REST API | [wger-project/wger](https://github.com/wger-project/wger) | `master` | `wger/`, `settings/`, `manage.py`, `pyproject.toml` |
+
 ## Reading order
 
 1. Open a repository's README and its `AGENTS.md` / `CLAUDE.md` (when present) for operator expectations.
