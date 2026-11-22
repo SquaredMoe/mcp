@@ -93,7 +93,16 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 - Qwen3-VL and claude-eyes may support visual/video analysis; Remotion supports React-based video authoring. Browser-harness and obscura are candidates for authorized browser automation. Protect session credentials and respect site permissions.
 - All combinations remain untested; check licensing and dependencies before use.
 
-## 13. Making reusable knowledge durable
+## 13. Fitness planning and nutrition tracking
+
+- `wger` provides workout programming, food logging, body measurements and a REST API; it is a candidate primary platform for fitness tracking.
+- `workout-cool` is a separate self-hostable coaching and exercise planning application. Evaluate it as an alternative or reference, not an installed integration with wger.
+- `exercises-dataset` documents structured exercise metadata, animated GIFs and thumbnails. Its media have additional copyright/license terms; do not import or redistribute the imagery without checking them.
+- The user's private `wger-ai-bridge` repository is **not** included in this public knowledge base. No private project contents or metadata are published here.
+
+**Possible experiment:** compare exercise IDs, licenses, schemas and API capabilities in a sandbox before any proposed cross-app import. Do not modify a live training or nutrition plan as part of this repository discovery.
+
+## 14. Making reusable knowledge durable
 
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
