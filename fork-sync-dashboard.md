@@ -2,9 +2,9 @@
 
 > Automatically generated. **This report does not itself sync code.** Each fork's own GitHub Actions workflow performs synchronization.
 
-**Last check:** 2026-11-21 17:34 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
+**Last check:** 2026-11-22 02:14 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
 
-**Public forks:** **67** &nbsp; · &nbsp; **Healthy:** **49** &nbsp; · &nbsp; **Needs attention:** **18** &nbsp; · &nbsp; **Pending/other:** **0**
+**Public forks:** **67** &nbsp; · &nbsp; **Healthy:** **57** &nbsp; · &nbsp; **Needs attention:** **10** &nbsp; · &nbsp; **Pending/other:** **0**
 
 **New-fork discovery:** automatic &nbsp; · &nbsp; **New-fork installation:** Read-only controller (ChatGPT daily task also attempts onboarding)
 
@@ -23,11 +23,11 @@
 | [SquaredMoe/caveman-token-reduction](https://github.com/SquaredMoe/caveman-token-reduction) | JuliusBrussee/caveman | [✅ Healthy](https://github.com/SquaredMoe/caveman-token-reduction/actions/runs/44905908796) | 2026-11-21 12:50 UTC |
 | [SquaredMoe/claude-ads](https://github.com/SquaredMoe/claude-ads) | AgriciDaniel/claude-ads | [🟠 Stale](https://github.com/SquaredMoe/claude-ads/actions/runs/43425804034) | 2026-11-13 12:30 UTC |
 | [SquaredMoe/claude-eyes](https://github.com/SquaredMoe/claude-eyes) | moritzkremb/claude-eyes | [✅ Healthy](https://github.com/SquaredMoe/claude-eyes/actions/runs/44910036863) | 2026-11-21 13:40 UTC |
-| [SquaredMoe/claude-seo](https://github.com/SquaredMoe/claude-seo) | AgriciDaniel/claude-seo | [🔴 Failure](https://github.com/SquaredMoe/claude-seo/actions/runs/44906395421) | 2026-11-21 12:56 UTC |
+| [SquaredMoe/claude-seo](https://github.com/SquaredMoe/claude-seo) | AgriciDaniel/claude-seo | [✅ Healthy](https://github.com/SquaredMoe/claude-seo/actions/runs/44946539208) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/day-trader-skill](https://github.com/SquaredMoe/day-trader-skill) | Jakeschincariol/day-trader-skill | [✅ Healthy](https://github.com/SquaredMoe/day-trader-skill/actions/runs/44906625912) | 2026-11-21 13:00 UTC |
 | [SquaredMoe/design-resources-for-developers](https://github.com/SquaredMoe/design-resources-for-developers) | bradtraversy/design-resources-for-developers | [✅ Healthy](https://github.com/SquaredMoe/design-resources-for-developers/actions/runs/44907097898) | 2026-11-21 13:05 UTC |
-| [SquaredMoe/ECC-skills](https://github.com/SquaredMoe/ECC-skills) | affaan-m/ECC | [🔴 Failure](https://github.com/SquaredMoe/ECC-skills/actions/runs/44908013781) | 2026-11-21 13:16 UTC |
-| [SquaredMoe/exercises-dataset](https://github.com/SquaredMoe/exercises-dataset) | hasaneyldrm/exercises-dataset | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/exercises-dataset/actions/workflows/sync-fork-upstream.yml) | — |
+| [SquaredMoe/ECC-skills](https://github.com/SquaredMoe/ECC-skills) | affaan-m/ECC | [✅ Healthy](https://github.com/SquaredMoe/ECC-skills/actions/runs/44946551192) | 2026-11-21 20:29 UTC |
+| [SquaredMoe/exercises-dataset](https://github.com/SquaredMoe/exercises-dataset) | hasaneyldrm/exercises-dataset | [✅ Healthy](https://github.com/SquaredMoe/exercises-dataset/actions/runs/44946557443) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/fastapi](https://github.com/SquaredMoe/fastapi) | fastapi/fastapi | [✅ Healthy](https://github.com/SquaredMoe/fastapi/actions/runs/44910052232) | 2026-11-21 13:40 UTC |
 | [SquaredMoe/fb_reel_dl](https://github.com/SquaredMoe/fb_reel_dl) | nanofatdog/fb_reel_dl | [✅ Healthy](https://github.com/SquaredMoe/fb_reel_dl/actions/runs/44908925629) | 2026-11-21 13:27 UTC |
 | [SquaredMoe/FFmpeg](https://github.com/SquaredMoe/FFmpeg) | FFmpeg/FFmpeg | [✅ Healthy](https://github.com/SquaredMoe/FFmpeg/actions/runs/44908793308) | 2026-11-21 13:25 UTC |
@@ -40,7 +40,7 @@
 | [SquaredMoe/mcp](https://github.com/SquaredMoe/mcp) | BrowserMCP/mcp | [✅ Healthy](https://github.com/SquaredMoe/mcp/actions/runs/44910158478) | 2026-11-21 13:42 UTC |
 | [SquaredMoe/mojs-web-design-animator](https://github.com/SquaredMoe/mojs-web-design-animator) | mojs/mojs | [✅ Healthy](https://github.com/SquaredMoe/mojs-web-design-animator/actions/runs/44910329788) | 2026-11-21 13:44 UTC |
 | [SquaredMoe/n8n_chatbot](https://github.com/SquaredMoe/n8n_chatbot) | n8n-io/n8n | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/n8n_chatbot/actions/workflows/sync-fork-upstream.yml) | — |
-| [SquaredMoe/nautilus_trader](https://github.com/SquaredMoe/nautilus_trader) | nautechsystems/nautilus_trader | [🔴 Failure](https://github.com/SquaredMoe/nautilus_trader/actions/runs/44914525435) | 2026-11-21 14:33 UTC |
+| [SquaredMoe/nautilus_trader](https://github.com/SquaredMoe/nautilus_trader) | nautechsystems/nautilus_trader | [✅ Healthy](https://github.com/SquaredMoe/nautilus_trader/actions/runs/44946542653) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/obscura](https://github.com/SquaredMoe/obscura) | h4ckf0r0day/obscura | [✅ Healthy](https://github.com/SquaredMoe/obscura/actions/runs/44910247920) | 2026-11-21 13:43 UTC |
 | [SquaredMoe/OfficeCLI](https://github.com/SquaredMoe/OfficeCLI) | iOfficeAI/OfficeCLI | [✅ Healthy](https://github.com/SquaredMoe/OfficeCLI/actions/runs/44914850131) | 2026-11-21 14:36 UTC |
 | [SquaredMoe/ollama](https://github.com/SquaredMoe/ollama) | ollama/ollama | [✅ Healthy](https://github.com/SquaredMoe/ollama/actions/runs/44910082109) | 2026-11-21 13:41 UTC |
@@ -48,7 +48,7 @@
 | [SquaredMoe/Open-Generative-AI](https://github.com/SquaredMoe/Open-Generative-AI) | Anil-matcha/Open-Generative-AI | [✅ Healthy](https://github.com/SquaredMoe/Open-Generative-AI/actions/runs/44915791680) | 2026-11-21 14:48 UTC |
 | [SquaredMoe/open-higgsfield-imaging](https://github.com/SquaredMoe/open-higgsfield-imaging) | wide-trace/open-higgsfield | [✅ Healthy](https://github.com/SquaredMoe/open-higgsfield-imaging/actions/runs/44915890241) | 2026-11-21 14:49 UTC |
 | [SquaredMoe/OpenCreator-content-creator](https://github.com/SquaredMoe/OpenCreator-content-creator) | krillinai/OpenCreator | [✅ Healthy](https://github.com/SquaredMoe/OpenCreator-content-creator/actions/runs/44916356790) | 2026-11-21 14:54 UTC |
-| [SquaredMoe/OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | open-jarvis/OpenJarvis | [🔴 Failure](https://github.com/SquaredMoe/OpenJarvis/actions/runs/44910154869) | 2026-11-21 13:41 UTC |
+| [SquaredMoe/OpenJarvis](https://github.com/SquaredMoe/OpenJarvis) | open-jarvis/OpenJarvis | [✅ Healthy](https://github.com/SquaredMoe/OpenJarvis/actions/runs/44946545415) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/OpenMontage](https://github.com/SquaredMoe/OpenMontage) | OpenMontageInc/OpenMontage | [✅ Healthy](https://github.com/SquaredMoe/OpenMontage/actions/runs/44916362045) | 2026-11-21 14:54 UTC |
 | [SquaredMoe/PicGo-image-creator](https://github.com/SquaredMoe/PicGo-image-creator) | Molunerfinn/PicGo | [✅ Healthy](https://github.com/SquaredMoe/PicGo-image-creator/actions/runs/44916513668) | 2026-11-21 14:56 UTC |
 | [SquaredMoe/postiz-app-social-media](https://github.com/SquaredMoe/postiz-app-social-media) | gitroomhq/postiz-app | [✅ Healthy](https://github.com/SquaredMoe/postiz-app-social-media/actions/runs/44918208000) | 2026-11-21 15:15 UTC |
@@ -56,7 +56,7 @@
 | [SquaredMoe/Qwen3-VL](https://github.com/SquaredMoe/Qwen3-VL) | QwenLM/Qwen3-VL | [✅ Healthy](https://github.com/SquaredMoe/Qwen3-VL/actions/runs/44910142662) | 2026-11-21 13:41 UTC |
 | [SquaredMoe/rea](https://github.com/SquaredMoe/rea) | morluto/rea | [🟠 Stale](https://github.com/SquaredMoe/rea/actions/runs/43452798695) | 2026-11-13 15:27 UTC |
 | [SquaredMoe/remotion](https://github.com/SquaredMoe/remotion) | remotion-dev/remotion | [✅ Healthy](https://github.com/SquaredMoe/remotion/actions/runs/44910158237) | 2026-11-21 13:42 UTC |
-| [SquaredMoe/replica-skill](https://github.com/SquaredMoe/replica-skill) | Jakeschincariol/replica-skill | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/replica-skill/actions/workflows/sync-fork-upstream.yml) | — |
+| [SquaredMoe/replica-skill](https://github.com/SquaredMoe/replica-skill) | Jakeschincariol/replica-skill | [✅ Healthy](https://github.com/SquaredMoe/replica-skill/actions/runs/44946560138) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/RSSHub](https://github.com/SquaredMoe/RSSHub) | DIYgod/RSSHub | [🟠 Stale](https://github.com/SquaredMoe/RSSHub/actions/runs/43726496071) | 2026-11-15 14:50 UTC |
 | [SquaredMoe/ruflo](https://github.com/SquaredMoe/ruflo) | ruvnet/ruflo | [🟠 Stale](https://github.com/SquaredMoe/ruflo/actions/runs/44546225016) | 2026-11-19 14:40 UTC |
 | [SquaredMoe/setup-ipsec-vpn](https://github.com/SquaredMoe/setup-ipsec-vpn) | hwdsl2/setup-ipsec-vpn | [✅ Healthy](https://github.com/SquaredMoe/setup-ipsec-vpn/actions/runs/44919291463) | 2026-11-21 15:27 UTC |
@@ -74,10 +74,10 @@
 | [SquaredMoe/unslop](https://github.com/SquaredMoe/unslop) | heydamir/unslop | [✅ Healthy](https://github.com/SquaredMoe/unslop/actions/runs/44910230305) | 2026-11-21 13:42 UTC |
 | [SquaredMoe/Vibe-Trading](https://github.com/SquaredMoe/Vibe-Trading) | HKUDS/Vibe-Trading | [✅ Healthy](https://github.com/SquaredMoe/Vibe-Trading/actions/runs/44923893064) | 2026-11-21 16:18 UTC |
 | [SquaredMoe/VoiceStudio](https://github.com/SquaredMoe/VoiceStudio) | debpalash/VoiceStudio | [🟠 Stale](https://github.com/SquaredMoe/VoiceStudio/actions/runs/43465346825) | 2026-11-13 16:42 UTC |
-| [SquaredMoe/wger](https://github.com/SquaredMoe/wger) | wger-project/wger | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/wger/actions/workflows/sync-fork-upstream.yml) | — |
+| [SquaredMoe/wger](https://github.com/SquaredMoe/wger) | wger-project/wger | [✅ Healthy](https://github.com/SquaredMoe/wger/actions/runs/44946559741) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/whisper](https://github.com/SquaredMoe/whisper) | openai/whisper | [✅ Healthy](https://github.com/SquaredMoe/whisper/actions/runs/44910154208) | 2026-11-21 13:41 UTC |
 | [SquaredMoe/whisper.cpp](https://github.com/SquaredMoe/whisper.cpp) | ggml-org/whisper.cpp | [✅ Healthy](https://github.com/SquaredMoe/whisper.cpp/actions/runs/44910024979) | 2026-11-21 13:40 UTC |
-| [SquaredMoe/workout-cool](https://github.com/SquaredMoe/workout-cool) | Snouzy/workout-cool | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/workout-cool/actions/workflows/sync-fork-upstream.yml) | — |
+| [SquaredMoe/workout-cool](https://github.com/SquaredMoe/workout-cool) | Snouzy/workout-cool | [✅ Healthy](https://github.com/SquaredMoe/workout-cool/actions/runs/44946561975) | 2026-11-21 20:29 UTC |
 | [SquaredMoe/yt-dlp](https://github.com/SquaredMoe/yt-dlp) | yt-dlp/yt-dlp | [✅ Healthy](https://github.com/SquaredMoe/yt-dlp/actions/runs/44924435972) | 2026-11-21 16:24 UTC |
 
 ## How it works
