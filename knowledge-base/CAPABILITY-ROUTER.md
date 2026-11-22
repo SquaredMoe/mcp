@@ -1,12 +1,13 @@
 # Capability router and token-efficient operating playbook
 
-Updated 2026-11-20. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
+Updated 2026-11-22. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
 
 ## Routing table
 
 | Task | First choice | Add only when needed |
 | --- | --- | --- |
 | Local assistant / inference | ollama, OpenJarvis | OmniRoute, caveman-token-reduction, mcp |
+| Workout, nutrition and fitness tracking | wger | workout-cool, exercises-dataset (check media licenses before use) |
 | Backend API development | fastapi | ECC-skills, replica-skill |
 | Multi-agent coding orchestration | ruflo | ECC-skills, agency-agents |
 | Coding / app development | ECC-skills, replica-skill | agency-agents, impeccable, stitch-skills |
