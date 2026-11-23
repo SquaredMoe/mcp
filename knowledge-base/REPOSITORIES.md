@@ -1,6 +1,6 @@
 # Repository catalog — SquaredMoe
 
-As of 2026-11-20. The public catalog contains 64 distinct repositories, including directly verified n8n_chatbot. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. Path hints come from root listings.
+As of 2026-11-23. The public catalog contains 68 distinct repositories, including directly verified n8n_chatbot. Existing fork metadata is from previous inspection; new entries are based on direct metadata and README checks. Path hints come from root listings.
 
 | Repository | Topic | What it covers | Upstream parent | Default branch | Inspect first |
 | --- | --- | --- | --- | --- | --- |
@@ -73,6 +73,8 @@ As of 2026-11-20. The public catalog contains 64 distinct repositories, includin
 | [exercises-dataset](https://github.com/SquaredMoe/exercises-dataset) | Fitness data | Exercise dataset with instructions, thumbnails and animated demonstrations (media licensing requires separate review) | [hasaneyldrm/exercises-dataset](https://github.com/hasaneyldrm/exercises-dataset) | `main` | `data/`, `images/`, `videos/`, `README.md` |
 | [workout-cool](https://github.com/SquaredMoe/workout-cool) | Fitness application | Self-hostable fitness coaching, exercise library and workout planning web platform | [Snouzy/workout-cool](https://github.com/Snouzy/workout-cool) | `main` | `app/`, `src/`, `prisma/`, `package.json`, `docker-compose.yml` |
 | [wger](https://github.com/SquaredMoe/wger) | Fitness / nutrition | Self-hostable workout, nutrition and body-measurement manager with REST API | [wger-project/wger](https://github.com/wger-project/wger) | `master` | `wger/`, `settings/`, `manage.py`, `pyproject.toml` |
+
+| [Telegram-Media-Downloader](https://github.com/SquaredMoe/Telegram-Media-Downloader) | Media / browser userscript | Telegram Web userscript for media downloads; review copyright, permissions and site rules before use | [Neet-Nestor/Telegram-Media-Downloader](https://github.com/Neet-Nestor/Telegram-Media-Downloader) | `main` | `README.md`, `docs/`, userscript source |
 
 ## Reading order
 
