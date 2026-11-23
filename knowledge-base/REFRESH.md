@@ -1,0 +1,53 @@
+# Refresh and validation playbook
+
+## Status and evidence levels
+
+- **Verified:** Repository exists at `SquaredMoe/<name>`; GitHub metadata (public/fork/parent/default branch); top-level files/directories; README opening content viewed on 2026-11-11 (initial 36) and 2026-11-12 (VPN and self-hosted resources); Sherlock uses `docs/README.md` plus `pyproject.toml` rather than a root README.
+- **Described:** Repository purpose comes from project metadata/README and is not an independent technical evaluation.
+- **Hypothesis:** Cross-repository workflows in [RELATIONSHIPS.md](RELATIONSHIPS.md). No integration is asserted.
+- **Not done:** Full code audit, commit-by-commit upstream comparison, complete dependency/SBOM inventory, runtime execution, security assessment, license-compatibility review, verification of deployed environments, and reading of every source file.
+
+## Sync history
+
+- **2026-11-11:** Initial repository inventory — 36 public forks.
+- **2026-11-12:** 37 accessible repositories. New public fork: `SquaredMoe/setup-ipsec-vpn` (upstream `hwdsl2/setup-ipsec-vpn`, default branch `master`). GitHub metadata, root directory and README reviewed; added to catalog, topic map and relationship notes. No removals or renames detected.
+- **2026-11-12 (later check):** 39 accessible repositories. New public forks: `SquaredMoe/awesome-selfhosted` (upstream `awesome-selfhosted/awesome-selfhosted`, `master`) and `SquaredMoe/sherlock` (upstream `sherlock-project/sherlock`, `master`). GitHub metadata and repository roots inspected, plus project documentation; the Sherlock README is in `docs/README.md`. No removals or renames detected.
+- **2026-11-13:** 46 repositories returned by the owner-filtered repository list. Added `stitch-skills`, `VoiceStudio`, `FFmpeg`, `OpenMontage`, `yt-dlp`, `fb_reel_dl` and `img2threejs`. Verified public fork metadata, upstream parent, default branch, repository root, and opening README content. All seven already have `.github/workflows/sync-fork-upstream.yml` on their default branch; no workflow overwritten. The central dashboard lists `n8n_chatbot`, which was omitted from the owner-filtered repository listing but **directly verified** as an accessible public fork of `n8n-io/n8n` on `master`. This makes **47 verified public forks** in total. Its safe-upstream-sync workflow is missing; the attempted installation returned GitHub HTTP 403 (`Resource not accessible by integration`). No deletion or rename is asserted.
+- **2026-11-14:** 48 verified public forks (46 listed plus directly verified `n8n_chatbot` and newly discovered `replica-skill`). Reviewed replica-skill metadata, root and README; default branch `main`, upstream `Jakeschincariol/replica-skill`. Missing sync workflow; creation rejected with HTTP 403. No removals or renames detected. Dashboard at 02:27 UTC reported 42 healthy, four failed runs and two missing workflows. Job logs confirm workflow permission rejection for claude-seo and ECC-skills, local working-tree changes blocking merge for hyperframes, and merge conflicts for uikit-frontend. Existing workflows were not edited.
+- **2026-11-16:** 52 public forks (51 listed plus directly verified `n8n_chatbot`, ID 1065301066). Added `ruflo` (ID 1458725001) and `fastapi` (ID 1459338107); metadata, roots and READMEs reviewed. Installed and read back the existing safe-sync template on both default branches; Actions enablement and execution unverified. No removals or renames detected. Dashboard at 02:10 UTC reported 40 healthy and 12 needing attention before these installations.
+- **2026-11-19:** Added public fork `unslop` (ID 1463082466, upstream `heydamir/unslop`, `main`), reviewed README and root, and created missing safe-sync workflow (commit `0075a608f3b07cdfd7b85824ef40c07bf90d10ec`). Catalog now 53 public forks; `n8n_chatbot` directly verified with unchanged ID 1065301066. No removals or renames detected; execution not verified.
+- **2026-11-20:** Added 11 directly verified public forks; metadata, README and root inspected, missing sync workflows created on default branches. Catalog now 64 public forks; execution not verified. n8n_chatbot directly verified with unchanged ID 1065301066. New repository IDs: `Arabizi-Transliteration` 1463831225; `arabic_jailbreak` 1463842164; `Lebanese-Villages-List` 1463848156; `speechbrain` 1463854190; `whisper.cpp` 1463854485; `whisper` 1463854814; `Qwen3-VL` 1463855168; `claude-eyes` 1464537519; `remotion` 1464538390; `browser-harness` 1464538920; `obscura` 1464712090. No removals or renames detected.
+- **2026-11-22:** Public inventory increased from 64 to 67. New public forks: `exercises-dataset` (ID 1466703743, parent `hasaneyldrm/exercises-dataset`, `main`), `workout-cool` (ID 1466704197, parent `Snouzy/workout-cool`, `main`), and `wger` (ID 1466704869, parent `wger-project/wger`, `master`). GitHub metadata, top-level directories, README opening content and existing `.github/workflows/sync-fork-upstream.yml` verified on all three; no workflow creation necessary. Existing `n8n_chatbot` directly verified public (ID 1065301066) despite omission from owner listing; its workflow remains missing. A separate newly accessible private non-fork repository was excluded from public documentation and left unchanged. No removals or renames established. Central dashboard at 2026-11-22 02:14 UTC reports 67 public forks, 57 healthy and 10 needing attention; dashboard statuses are point-in-time observations, not independent execution tests.
+- **Scope of automated comparison:** Repository names, default branches and tracked inventory. New code within existing repositories is not deeply inspected by this inventory refresh.
+
+## Suggested quarterly refresh
+
+1. Re-list all repositories accessible to the GitHub account; identify new, deleted, archived, or newly private projects before publishing a refreshed index.
+2. For each repository, read `GET /repos/SquaredMoe/<repo>` metadata (default branch, fork and parent, pushed timestamp), its root contents, and the README.
+3. Inspect manifests and lockfiles for actual dependency and language information; record verified versions and source paths.
+4. Compare the fork to upstream to find custom code and synchronization gaps.
+5. Update repository rows, topic mapping, and any validated architecture diagrams; date each revision.
+6. Review changes for confidential information **before** publishing to any public branch. Don't index API tokens, private configuration, proprietary code, or personal data.
+
+## Template for a deep-dive
+
+```markdown
+# <repository>
+As reviewed: YYYY-MM-DD | Fork: SquaredMoe/<repo> | Upstream: <owner/repo>
+Scope: <branch/SHA and files inspected>
+Purpose: <brief verified description>
+Languages and frameworks: <manifest-backed facts>
+Architecture: <components and interactions based on source>
+Entrypoints and key files: <links>
+Build and test: <documented commands; clearly mark if untested>
+Security and privacy considerations: <evidence and unknowns>
+Differences from upstream: <verified compare result>
+Open questions: <unknowns>
+Related repos: <confirmed integrations vs ideas>
+```
+
+## Suggested future-chat prompt
+
+> Use the GitHub connector to read `SquaredMoe/mcp` branch `docs/github-knowledge-base-2026-11-11`, starting at `knowledge-base/README.md`. Treat it as a dated directory, not durable model memory. Recheck current repository state for the specific project before making claims or code changes.
+
+- **2026-11-23:** Owner listing and direct repository metadata show new public fork `Telegram-Media-Downloader` (upstream `Neet-Nestor/Telegram-Media-Downloader`, default `main`). README and root inspected; installed existing Daily Safe Upstream Sync workflow without replacing existing files (commit `45a1557aad4c3f4d2de23e041fb02e9661e9c6f9`). First execution not verified. Also discovered private non-fork `wger-ai-bridge`, excluded from public catalog and left unchanged. Dashboard at 02:46 UTC reports 68 public forks, 58 healthy and 10 needing attention. No removals or renames confirmed.
