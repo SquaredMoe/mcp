@@ -1,6 +1,6 @@
 # SquaredMoe GitHub Knowledge Base
 
-> **Snapshot:** 2026-11-22 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 67 distinct public repositories (including one directly verified outside the listing).
+> **Snapshot:** 2026-11-23 · **Account:** [SquaredMoe](https://github.com/SquaredMoe) · **Scope:** 68 distinct public repositories (including one directly verified outside the listing).
 
 ## What this is
 
@@ -12,7 +12,7 @@ Use the connected GitHub repository files as the source of truth for any impleme
 
 - [Capability router and token-efficient playbook](CAPABILITY-ROUTER.md) — selective retrieval and local-first AI setup plan.
 
-- [Repository catalog (all 67)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
+- [Repository catalog (all 68)](REPOSITORIES.md) — purposes, upstream origins, default branches, and high-value paths to inspect.
 - [Relationships and potential workflows](RELATIONSHIPS.md) — ways the projects may complement each other; these are ideas, **not confirmed integrations**.
 - [Refresh and validation playbook](REFRESH.md) — how to maintain an accurate index and deep-dive into individual codebases.
 
