@@ -107,3 +107,7 @@ These are **ideas for evaluation**, not proof that any two forks are currently c
 - Keep the source-linked inventory in this branch/repository; periodically refresh it.
 - For a deep-dive, add per-repo notes based on verified manifests, routes, tests and important source files.
 - This knowledge base is a **snapshot**, not ChatGPT's persistent personal Memory and not an automatic live sync.
+
+## Telegram Web media userscript (evaluation only)
+
+- `Telegram-Media-Downloader` is a browser userscript described by its README as downloading Telegram Web media, including restricted-channel media. Evaluate only for content the user is authorized to access and retain; do not treat repository availability as permission to bypass distribution restrictions. No integration is installed or verified.
