@@ -1,6 +1,6 @@
 # Capability router and token-efficient operating playbook
 
-Updated 2026-11-22. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
+Updated 2026-11-23. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for exact names and paths. This is a reference playbook, not a deployed router or a change to any model's internal settings.
 
 ## Routing table
 
@@ -15,7 +15,7 @@ Updated 2026-11-22. Start here, then use [REPOSITORIES.md](REPOSITORIES.md) for 
 | Trading research / demo system | TradingAgents, nautilus_trader | trader-skill, day-trader-skill, Vibe-Trading, FinceptTerminal |
 | Social research / publishing | social-media-research-skills, postiz-app-social-media | Agent-Reach, claude-seo, claude-ads |
 | Media creation | OpenMontage, FFmpeg, remotion | VoiceStudio, hyperframes, OpenCreator-content-creator, Open-Generative-AI, open-higgsfield-imaging, PicGo-image-creator |
-| Authorized media ingest | yt-dlp | fb_reel_dl, FFmpeg |
+| Authorized media ingest | yt-dlp | fb_reel_dl, Telegram-Media-Downloader (respect access and copyright restrictions), FFmpeg |
 | IT / defensive security | setup-ipsec-vpn, PowerToys | strix-security, rea, sherlock (authorized scope only) |
 | Office files / analytics | OfficeCLI | skills-for-fabric |
 | Research | gpt-researcher, RSSHub | Agent-Reach, camofox-browser |
