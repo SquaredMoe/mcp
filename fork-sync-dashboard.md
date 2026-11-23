@@ -2,9 +2,9 @@
 
 > Automatically generated. **This report does not itself sync code.** Each fork's own GitHub Actions workflow performs synchronization.
 
-**Last check:** 2026-11-22 17:50 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
+**Last check:** 2026-11-23 02:46 UTC  |  **Owner:** [SquaredMoe](https://github.com/SquaredMoe)
 
-**Public forks:** **67** &nbsp; · &nbsp; **Healthy:** **58** &nbsp; · &nbsp; **Needs attention:** **9** &nbsp; · &nbsp; **Pending/other:** **0**
+**Public forks:** **68** &nbsp; · &nbsp; **Healthy:** **58** &nbsp; · &nbsp; **Needs attention:** **10** &nbsp; · &nbsp; **Pending/other:** **0**
 
 **New-fork discovery:** automatic &nbsp; · &nbsp; **New-fork installation:** Read-only controller (ChatGPT daily task also attempts onboarding)
 
@@ -67,6 +67,7 @@
 | [SquaredMoe/stitch-skills](https://github.com/SquaredMoe/stitch-skills) | google-labs-code/stitch-skills | [✅ Healthy](https://github.com/SquaredMoe/stitch-skills/actions/runs/45039548752) | 2026-11-22 15:39 UTC |
 | [SquaredMoe/strix-security](https://github.com/SquaredMoe/strix-security) | usestrix/strix | [✅ Healthy](https://github.com/SquaredMoe/strix-security/actions/runs/45041778850) | 2026-11-22 16:04 UTC |
 | [SquaredMoe/system-prompts-and-models-of-ai-tools](https://github.com/SquaredMoe/system-prompts-and-models-of-ai-tools) | x1xhlol/system-prompts-and-models-of-ai-tools | [✅ Healthy](https://github.com/SquaredMoe/system-prompts-and-models-of-ai-tools/actions/runs/45042590135) | 2026-11-22 16:13 UTC |
+| [SquaredMoe/Telegram-Media-Downloader](https://github.com/SquaredMoe/Telegram-Media-Downloader) | Neet-Nestor/Telegram-Media-Downloader | [🟠 Needs setup — Set CROSS_REPO_PAT to enroll automatically](https://github.com/SquaredMoe/Telegram-Media-Downloader/actions/workflows/sync-fork-upstream.yml) | — |
 | [SquaredMoe/trader-skill](https://github.com/SquaredMoe/trader-skill) | Jakeschincariol/trader-skill | [✅ Healthy](https://github.com/SquaredMoe/trader-skill/actions/runs/45043124943) | 2026-11-22 16:18 UTC |
 | [SquaredMoe/TradingAgents](https://github.com/SquaredMoe/TradingAgents) | TauricResearch/TradingAgents | [✅ Healthy](https://github.com/SquaredMoe/TradingAgents/actions/runs/45042896176) | 2026-11-22 16:16 UTC |
 | [SquaredMoe/ui-ux-pro-max-skill](https://github.com/SquaredMoe/ui-ux-pro-max-skill) | nextlevelbuilder/ui-ux-pro-max-skill | [✅ Healthy](https://github.com/SquaredMoe/ui-ux-pro-max-skill/actions/runs/45044010152) | 2026-11-22 16:28 UTC |
