@@ -49,3 +49,5 @@ Related repos: <confirmed integrations vs ideas>
 ## Suggested future-chat prompt
 
 > Use the GitHub connector to read `SquaredMoe/mcp` branch `docs/github-knowledge-base-2026-11-11`, starting at `knowledge-base/README.md`. Treat it as a dated directory, not durable model memory. Recheck current repository state for the specific project before making claims or code changes.
+
+- **2026-11-23:** Owner listing and direct repository metadata show new public fork `Telegram-Media-Downloader` (upstream `Neet-Nestor/Telegram-Media-Downloader`, default `main`). README and root inspected; installed existing Daily Safe Upstream Sync workflow without replacing existing files (commit `45a1557aad4c3f4d2de23e041fb02e9661e9c6f9`). First execution not verified. Also discovered private non-fork `wger-ai-bridge`, excluded from public catalog and left unchanged. Dashboard at 02:46 UTC reports 68 public forks, 58 healthy and 10 needing attention. No removals or renames confirmed.
